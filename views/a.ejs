@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Hello welcome to EJS
+    </h1>
+
+    
+    <ul>
+        <li>
+            <%=userName%>
+        </li>
+        <li>
+            <%=userNumber%>
+        </li>
+    </ul>
+
+    <form action="/" method="post">
+        <input type="text" name="name">
+        <input type="submit">
+    </form>
+    <%if(arr.length>0){%>
+        <%for(let i=0;i<=arr.length;i++){%>
+            <li>
+                <%=arr[i]%>
+            </li>
+        <%}%>
+    <%}else{%>
+        <img src="https://media.tenor.com/OyUVgQi-l-QAAAAC/404.gif" alt="">
+    <%}%>
+</body>
+</html>
